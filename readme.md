@@ -1,4 +1,4 @@
-# Personal [Flox](https://flox.dev/) global env
+# Personal ~/.[flox](https://flox.dev/) global env
 
 Using it to run `daemons` in background and setup global `$PATH` env with executables to run.
 

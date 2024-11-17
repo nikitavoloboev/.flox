@@ -27,8 +27,8 @@ mkpasswd.pkg-path = "mkpasswd"
 poetry.pkg-path = "poetry"
 hyperfine.pkg-path = "hyperfine"
 
-# TODO: see if https://floxcommunitygroup.slack.com/archives/C06NYALM8P8/p1731846414514329 it can just be
-# systems = ["aarch64-darwin"]
+# TODO: try optimize, what below is actually needed, https://floxcommunitygroup.slack.com/archives/C06NYALM8P8/p1731860072619089?thread_ts=1731846644.172259&cid=C06NYALM8P8
+# perhaps only aarch64-darwin is enough, what about cuda-detection?
 [options]
 systems = ["aarch64-darwin", "aarch64-linux", "x86_64-darwin", "x86_64-linux"]
-cuda-detection = false
+cuda-detection = false                                                         # here as with it `true`, it increases loading time

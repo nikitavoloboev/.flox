@@ -29,5 +29,4 @@ hyperfine.pkg-path = "hyperfine"
 
 [options]
 systems = ["aarch64-darwin", "x86_64-darwin"]
-# saves on loading time as I don't use cuda
-cuda-detection = false
+cuda-detection = false                        # saves on loading time as I don't use cuda

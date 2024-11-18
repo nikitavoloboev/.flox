@@ -28,5 +28,5 @@ poetry.pkg-path = "poetry"
 hyperfine.pkg-path = "hyperfine"
 
 [options]
-systems = ["aarch64-darwin", "x86_64-darwin"]
-cuda-detection = false                        # saves on loading time as I don't use cuda
+systems = ["aarch64-darwin"]
+cuda-detection = false       # saves on loading time as I don't use cuda

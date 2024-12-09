@@ -1,7 +1,7 @@
 version = 1
 
-[services.goku]
-command = "bun ~/src/ts/daemons/goku-watch.ts"
+[services.watch]
+command = "bun ~/src/ts/daemons/watch.ts"
 
 [install]
 eza.pkg-path = "eza"
@@ -26,6 +26,10 @@ topgrade.pkg-path = "topgrade"
 mkpasswd.pkg-path = "mkpasswd"
 poetry.pkg-path = "poetry"
 hyperfine.pkg-path = "hyperfine"
+clickhouse.pkg-path = "clickhouse"
+pnpm_9.flake = "github:scrumplex/nixpkgs/pkgs/pnpm/9.15#pnpm"
+direnv.pkg-path = "direnv"
+fnm.pkg-path = "fnm"
 
 [options]
 systems = ["aarch64-darwin"]

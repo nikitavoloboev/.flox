@@ -116,13 +116,6 @@
         "is-daemon": null,
         "shutdown": null,
         "systems": null
-      },
-      "ts-run": {
-        "command": "cd ~/src/ts/scripts && bun --watch p-run.ts",
-        "vars": null,
-        "is-daemon": null,
-        "shutdown": null,
-        "systems": null
       }
     }
   },

@@ -6,8 +6,8 @@ command = "bun ~/src/ts/daemons/watch.ts"
 # TODO: mby combine this into 1 service above?
 # or 1 optimized rust service that watches over various things and is easy to modify
 # + cache and show colored logs
-[services.ts-run]
-command = "cd ~/src/ts/scripts && bun --watch p-run.ts"
+# [services.ts-run]
+# command = "cd ~/x/scripts && bun --watch p-run.ts"
 
 [install]
 eza.pkg-path = "eza"

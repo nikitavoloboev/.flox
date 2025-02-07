@@ -1,7 +1,13 @@
 version = 1
 
-[services.watch]
+[services.goku]
 command = "bun ~/src/ts/daemons/watch.ts"
+
+# TODO: mby combine this into 1 service above?
+# or 1 optimized rust service that watches over various things and is easy to modify
+# + cache and show colored logs
+[services.ts-run]
+command = "cd ~/src/ts/scripts && bun --watch p-run.ts"
 
 [install]
 eza.pkg-path = "eza"
@@ -16,7 +22,7 @@ nixd.pkg-path = "nixd"
 deploy-rs.pkg-path = "deploy-rs"
 nixos-rebuild.pkg-path = "nixos-rebuild"
 nix-index.pkg-path = "nix-index"
-go_1_23.pkg-path = "go_1_23"
+# go_1_23.pkg-path = "go_1_23"
 # gh.pkg-path = "gh"
 xcpretty.pkg-path = "xcpretty"
 htop.pkg-path = "htop"
@@ -35,6 +41,8 @@ watchexec.pkg-path = "watchexec"
 btop.pkg-path = "btop"
 dnslookup.pkg-path = "dnslookup"
 zoxide.pkg-path = "zoxide"
+zls.pkg-path = "zls"
+just.pkg-path = "just"
 
 [options]
 systems = ["aarch64-darwin"]

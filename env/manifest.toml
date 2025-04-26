@@ -1,7 +1,7 @@
 version = 1
 
-[services.goku]
-command = "bun ~/src/ts/daemons/watch.ts"
+[services.watch]
+command = "bun ~/src/ts/i/daemons/watch.ts"
 
 # TODO: mby combine this into 1 service above?
 # or 1 optimized rust service that watches over various things and is easy to modify
@@ -43,6 +43,11 @@ dnslookup.pkg-path = "dnslookup"
 zoxide.pkg-path = "zoxide"
 zls.pkg-path = "zls"
 just.pkg-path = "just"
+jujutsu.pkg-path = "jujutsu"
+jjui.pkg-path = "jjui"
+jj-fzf.pkg-path = "jj-fzf"
+hunt.pkg-path = "hunt"
+television.pkg-path = "television"
 
 [options]
 systems = ["aarch64-darwin"]
